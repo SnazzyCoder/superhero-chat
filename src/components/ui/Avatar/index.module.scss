@@ -1,0 +1,40 @@
+.avatarContainer {
+  position: relative;
+  .avatar {
+    height: 53px;
+    width: 53px;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    // Cover fit image
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    overflow: visible;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ffffff;
+  }
+
+  &.online::after {
+    background: #00bcd4;
+  }
+
+  &.offline::after {
+    background: #5f5f5f;
+  }
+
+  &.away::after {
+    background: #ff9800;
+  }
+
+  &.busy::after {
+    background: #f44336;
+  }
+}

@@ -1,0 +1,30 @@
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 17px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(151, 151, 151, 0.19);
+  border-radius: 54px;
+
+  width: 100%;
+
+  .searchInput {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 109%;
+    outline: none;
+    border: none;
+    /* or 15px */
+
+    color: #8f8f8f;
+
+    /* Inside auto layout */
+
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 14px;
+  }
+}

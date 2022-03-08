@@ -1,0 +1,135 @@
+.container {
+  background: #f5f7fb;
+  min-height: 100px;
+  height: 100%;
+
+  .main {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 2fr 5fr;
+    height: 100%;
+    grid-gap: 30px;
+  }
+
+  .left {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    gap: 16px;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(151, 151, 151, 0.19);
+    border-radius: 30px;
+  }
+
+  .contentWrapper {
+    width: 100%;
+    flex-grow: 1;
+
+    .statusBar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .userTag {
+      background: #ffffff;
+      border-radius: 35.7282px 35.7282px 0px 0px;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .actionButtons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .bottomBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 0px 5px;
+    }
+
+    .inputWrapper {
+      display: flex;
+      gap: 10px;
+      background-color: #f5f7fb;
+      border-radius: 100px;
+      padding: 10px 18px;
+      flex-grow: 1;
+
+      button {
+        background-color: transparent;
+      }
+
+      input {
+        background-color: transparent;
+        flex-grow: 1;
+        outline: none;
+        border: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 109%;
+        /* or 16px */
+
+      }
+    }
+  }
+
+  .chatPanel {
+    background-color: white;
+    padding: 20px 22px 10px;
+    max-height: 70vh;
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    // overflow: scroll;
+
+    .messagesPanelWrapper {
+      overflow: scroll;
+      // max-height: 60vh;
+      height: 100%;
+      flex-grow: 1;
+    }
+  }
+
+  button {
+    background: #ffffff;
+    border: none;
+    // padding: 12px 22px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      // Lighten the button through filters
+      filter: brightness(110%);
+    }
+  }
+  .primaryButton {
+    background: #3da68b;
+    height: 50px;
+    width: 50px;
+    border-radius: 42px;
+  }
+}

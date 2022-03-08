@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #f3f3f3;
+    width: 80%;
+
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .content {
+    flex-grow: 1;
+
+    .mainLine {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 109%;
+      flex-grow: 1;
+      /* or 17px */
+
+      color: #2a2a2a;
+    }
+    .verification {
+      // Align middle of line vertically
+      align-self: center;
+      display: inline-block;
+      margin-left: 5px;
+      margin-bottom: -6px;
+    }
+
+    .subtext {
+      font-size: 11.8462px;
+      line-height: 109%;
+      /* identical to box height, or 13px */
+
+      color: #828282;
+    }
+
+    .accentText {
+      font-weight: 600;
+      font-size: 12.95px;
+      line-height: 109%;
+      /* or 14px */
+
+      color: #2a2a2a;
+    }
+  }
+}
